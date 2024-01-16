@@ -28,11 +28,14 @@ public class Frames {
         js.executeScript("window.scrollBy(0,600)");
 
 	}
+	
+	//To count number of frames in given web page
 	public void countFrames() {
 		List<WebElement> li = dr.findElements(By.tagName("iframe"));
 		System.out.println(li.size()+" Frames present in current window");
 		
 	}
+	
 	public void frameOne() {
 		dr.switchTo().frame(dr.findElement(frame1));
 		textInFrameOne = dr.findElement(textOne).getText();

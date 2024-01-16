@@ -61,11 +61,14 @@ public class Windows {
 		}
 		dr.switchTo().window(baseURL);
 	}
+	
+	//To scroll the current window
 	public void scrollDown() {
 		JavascriptExecutor js = (JavascriptExecutor)dr;
         js.executeScript("window.scrollBy(0,300)");
 
 	}
+	
 	public void handleMessagedWindow() {
 		baseURL = dr.getWindowHandle();
 		messagedWindow.click();

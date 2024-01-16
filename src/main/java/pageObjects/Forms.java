@@ -13,6 +13,7 @@ public class Forms {
 	By firstName = By.id("firstName");
 	By lastName = By.id("lastName");
 	By email = By.id("userEmail");
+	
 	By gender1 = By.xpath("//label[@for='gender-radio-1']");
 	By gender2 = By.xpath("//label[@for='gender-radio-2']");
 	By gender3 = By.xpath("//label[@for='gender-radio-3']");
@@ -23,9 +24,11 @@ public class Forms {
 	By subjects = By.id("subjectsContainer");
 	By subjectInput = By.xpath("//input[@id='subjectsInput']");
 	By menu = By.xpath("//div/input[@aria-autocomplete='list']");
+	
 	By hobby1 = By.xpath("//label[@for='hobbies-checkbox-1']");
 	By hobby2 = By.xpath("//label[@for='hobbies-checkbox-2']");
 	By hobby3 = By.xpath("//label[@for='hobbies-checkbox-3']");
+	
 	By upload = By.id("uploadPicture");
 
 	By currentAddress = By.id("currentAddress");
@@ -74,7 +77,6 @@ public class Forms {
 		dr.findElement(subjectInput).sendKeys(s1);
 		dr.findElement(menu).click();
 		
-		
 	}
 	
 	public void checkBoxHobbies() {
@@ -85,6 +87,7 @@ public class Forms {
 	}
 	
 	public void uploadFile(String path) {
+		//file upload using sendKeys();
 		dr.findElement(upload).sendKeys(path);
 		
 	}
