@@ -21,6 +21,8 @@ public class Frames {
 	public Frames(WebDriver dr) {
 		this.dr=dr;
 	}
+	
+	//method to scroll down the web page
 	public void scrollDown() {
 		JavascriptExecutor js = (JavascriptExecutor)dr;
         js.executeScript("window.scrollBy(0,600)");
