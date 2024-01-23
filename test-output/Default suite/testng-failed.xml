@@ -5,8 +5,9 @@
     <classes>
       <class name="packTests.TestInteractions">
         <methods>
+          <include name="checkDroppable"/>
           <include name="setUp"/>
-          <include name="checkSelectable"/>
+          <include name="checkResizable"/>
         </methods>
       </class> <!-- packTests.TestInteractions -->
     </classes>
